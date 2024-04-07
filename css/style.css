@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+}
+
+.container {
+  padding: 40px 15px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 150px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #cc3f0c;
+  color: transparent;
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.card:hover {
+  background-color: #a93105;
+}
+
+.card.open {
+  background-color: #9a6d38;
+  color: #19231a;
+}
+
+.card.success {
+  background-color: #33673b;
+  color: #d8cbc7;
+}
+
